@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Nutrition = () => {
   return (
     <div>
@@ -7,21 +9,21 @@ const Nutrition = () => {
             Live<span>Good</span>
           </div>
           <ul className="nav-links">
-            <li className="link">
-              <a href="index.html">HOME</a>
-            </li>
-            <li className="link">
-              <a href="workout.html">SERVICES</a>
-            </li>
-            <li className="link">
-              <a href="healthy.html">HEALTHY TIPS</a>
-            </li>
-            <li className="link">
-              <a href="nutrition.html">NUTRITION PLAN</a>
-            </li>
-            <li className="link">
-              <a href="workout.html">WORKOUT ROUTINE</a>
-            </li>
+          <Link to="/">
+              <li className="link">HOME</li>
+            </Link>
+            <Link>
+              <li className="link">SERVICES</li>
+            </Link>
+            <Link to="/health">
+              <li className="link">HEALTHY TIPS</li>
+            </Link>
+            <Link to="/nutrition">
+              <li className="link">NUTRITION PLAN</li>
+            </Link>
+            <Link to="/workout">
+              <li className="link">WORKOUT ROUTINE</li>
+            </Link>
           </ul>
           <button className="btn">Contact Us</button>
         </nav>

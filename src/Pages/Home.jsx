@@ -7,11 +7,11 @@ const Home = () => {
                 <nav className="section_container nav_container">
                     <div className="nav-logo">Live<span>Good</span></div>
                     <ul className="nav-links">
-                        <li className="link"><a href="index.html">HOME</a></li>
-                        <li className="link"><a href="workout.html">SERVICES</a></li>
-                        <li className="link"><a href="healthy.html">HEALTHY TIPS</a></li>
-                        <li className="link"><a href="nutrition.html">NUTRITION PLAN</a></li>
-                        <li className="link"><a href="workout.html">WORKOUT ROUTINE</a></li>
+                        <Link to='/'><li className="link">HOME</li></Link>
+                        <Link><li className="link">SERVICES</li></Link>
+                        <Link to='/health'><li className="link">HEALTHY TIPS</li></Link>
+                        <Link to='/nutrition'><li className="link">NUTRITION PLAN</li></Link>
+                        <Link to='/workout'><li className="link">WORKOUT ROUTINE</li></Link>
                     </ul>
                     <button className="btn">Contact Us</button>
                 </nav>
@@ -42,7 +42,7 @@ const Home = () => {
             <section className="section_container service_container">
                 <div className="service_header">
                     <div className="service_header_content">
-                        <h2 class="section_header">Our Services</h2>
+                        <h2 className="section_header">Our Services</h2>
                         <p>Beyond simply providing Health care tips, our commitment lies in delivering uparalleled 
                             srevice tailored 
                             to your unique needs
@@ -58,7 +58,7 @@ const Home = () => {
                                     and a dash of protein to create a delicious feast for your body and soul. With your nutrition plan as our compass, we'll cultivate wellness 
                                     together, one delightful bite at a time!
                                 </p>
-                                <a href="nutrition.html">Learn More</a>
+                                <Link to='/nutrition'>Learn More</Link>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Home = () => {
                             snuggly bear for a peaceful night's sleep. Embrace these little adve ntures, and watch your wellness 
                             garden bloom with joy!
                         </p>
-                        <a href="healthy.html">Learn More</a>
+                        <Link to='/health'>Learn More</Link>
                         
                     </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
                             for the stars and touch your toes with giggles. Explore workouts that feel like playful adventures, whether it's pretending to be a graceful dolphin in the pool or a bouncy kangaroo on a trampoline. Don't forget to celebrate each move with smiles and high-fives! And when it's time to cool down, imagine yourself floating gently on a cloud, letting your body unwind like a sleepy kitten. With these playful tips, exercising becomes a delightful journey to a stronger, 
                             happier you!
                         </p>
-                        <a href="workout.html">Learn More</a>
+                        <Link to='/workout'>Learn More</Link>
 
                     </div>
                     
@@ -113,8 +113,8 @@ const Home = () => {
                </div>        
             </section>
             <footer className="footer">
-                <div class="section_container footer_container">
-                    <div class="footer_col">
+                <div className="section_container footer_container">
+                    <div className="footer_col">
                         <h3>Live<span>Good</span></h3>
                         <p>
                             We are honored to be a part of your healthcare journey and committed to delivering compassionate, personalized, and 
@@ -124,7 +124,7 @@ const Home = () => {
                             Trust us with your Health, and let us work together to achive the best possible outcomes for you and your loved ones.
                         </p>
                     </div>
-                    <div class="footer_col">
+                    <div className="footer_col">
                         <h4>About Us</h4>
                         <p>Home</p>
                         <p>Services</p>
@@ -132,26 +132,26 @@ const Home = () => {
                         <p>Nutrition</p>
                         <p>Terms and Conditions</p>
                     </div>
-                    <div class="footer_col">
+                    <div className="footer_col">
                         <h4>Services</h4>
                         <p>Health Tips</p>
                         <p>Nutrition Plans</p>
                         <p>workout Routines</p>
                     </div>
-                    <div class="footer_col">
+                    <div className="footer_col">
                         <h4>Contact Us</h4>
-                        <p><i class='bx bx-map'></i> Bugolobi, Luthuli Avenue</p>
-                        <p> <i class='bx bxl-gmail' ></i> livegood23@gamil.com</p>
-                        <p><i class='bx bxs-phone' ></i> (+256)753 574 262</p>
+                        <p><i className='bx bx-map'></i> Bugolobi, Luthuli Avenue</p>
+                        <p> <i className='bx bxl-gmail' ></i> livegood23@gamil.com</p>
+                        <p><i className='bx bxs-phone' ></i> (+256)753 574 262</p>
                     </div>
-                    <div class="footer_bar">
-                        <div class="footer_bar_content">
+                    <div className="footer_bar">
+                        <div className="footer_bar_content">
                             <p>Copyright © 2024 code crushers. All rights rescerved</p>
-                            <div class="footer_socials">
-                                <i class='bx bxl-twitter'></i>
-                                <i class='bx bxl-facebook'></i>
-                                <i class='bx bxl-whatsapp'></i>
-                                <i class='bx bxl-instagram' ></i> 
+                            <div className="footer_socials">
+                                <i className='bx bxl-twitter'></i>
+                                <i className='bx bxl-facebook'></i>
+                                <i className='bx bxl-whatsapp'></i>
+                                <i className='bx bxl-instagram' ></i> 
                             </div>
                         </div>
                      </div>
